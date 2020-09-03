@@ -1,5 +1,3 @@
-testing git
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +9,7 @@ testing git
     <!--favicon icon-->
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
-    <title>Touchspin</title>
+    <title>eChart Page</title>
 
     <!--google font-->
     <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -24,9 +22,6 @@ testing git
     <link href="assets/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <link href="assets/vendor/themify-icons/css/themify-icons.css" rel="stylesheet">
     <link href="assets/vendor/weather-icons/css/weather-icons.min.css" rel="stylesheet">
-
-    <!--touchspin-->
-    <link href="assets/vendor/touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
 
     <!--custom css-->
     <link href="assets/css/main.css" rel="stylesheet">
@@ -320,7 +315,7 @@ testing git
                     </li>
 
                     <li class="sub-menu">
-                        <a href="javascript:;"  class="active">
+                        <a href="javascript:;">
                             <i class=" icon-speech"></i>
                             <span>Forms</span>
                         </a>
@@ -345,9 +340,9 @@ testing git
                             </li>
 
                             <li class="sub-menu">
-                                <a  href="javascript:;" class="active">Advanced Form</a>
+                                <a  href="javascript:;">Advanced Form</a>
                                 <ul class="sub">
-                                    <li class="active"><a  href="form-touchspin.html">Touchpin</a></li>
+                                    <li><a  href="form-touchspin.html">Touchpin</a></li>
                                     <li><a  href="form-select2.html">Select2</a></li>
                                     <li><a  href="form-input-mask.html">Input Mask</a></li>
                                     <li><a  href="form-multiple-select.html"> Multiple Select</a></li>
@@ -357,7 +352,7 @@ testing git
                             </li>
 
                             <li class="sub-menu">
-                                <a  href="#">Editos</a>
+                                <a  href="javascript:;" class="">Editos</a>
                                 <ul class="sub">
                                     <li><a  href="editor-summernote.html">Summernote</a></li>
                                     <li><a  href="editor-markdown.html">Markdown</a></li>
@@ -365,7 +360,7 @@ testing git
                             </li>
 
                             <li class="sub-menu">
-                                <a  href="#">Form Validation</a>
+                                <a  href="javascript:;">Form Validation</a>
                                 <ul class="sub">
                                     <li><a  href="form-validation-basic.html">Basic Validation</a></li>
                                     <li><a  href="form-validation-jquery.html">jQuery Validation</a></li>
@@ -383,7 +378,7 @@ testing git
                         <ul class="sub">
                             <li><a  href="table-basic.html">Basic Table</a></li>
                             <li class="sub-menu">
-                                <a  href="#">Data Tables</a>
+                                <a href="javascript:;">Data Tables</a>
                                 <ul class="sub">
                                     <li><a  href="table-datatable.html">Basic Datatable</a></li>
                                     <li><a  href="table-datatable-show-hide.html">Toggle Col Datatable</a></li>
@@ -394,13 +389,13 @@ testing git
                     </li>
 
                     <li class="sub-menu">
-                        <a href="javascript:;">
+                        <a href="javascript:;" class="active">
                             <i class=" ti-pie-chart"></i>
                             <span>Charts</span>
                         </a>
                         <ul class="sub">
                             <li><a  href="flot-chart.html">Flot Charts</a></li>
-                            <li><a  href="echart.html">eCharts</a></li>
+                            <li class="active"><a  href="echart.html">eCharts</a></li>
                             <li><a  href="morris-chart.html">Morris Charts</a></li>
                         </ul>
                     </li>
@@ -513,12 +508,12 @@ testing git
         <main class="main-content">
             <!--page title start-->
             <div class="page-title">
-                <h4 class="mb-0"> Touchspin
-                    <small>some touchspin examples</small>
+                <h4 class="mb-0"> eChart Page
+                    <small>start your new page</small>
                 </h4>
                 <ol class="breadcrumb mb-0 pl-0 pt-1 pb-0">
                     <li class="breadcrumb-item"><a href="#" class="default-color">Home</a></li>
-                    <li class="breadcrumb-item active">Touchspin</li>
+                    <li class="breadcrumb-item active">eChart Page</li>
                 </ol>
             </div>
             <!--page title end-->
@@ -528,57 +523,136 @@ testing git
 
                 <!-- state start-->
                 <div class="row">
-                    <div class=" col-md-12">
+                    <div class=" col-sm-6">
                         <div class="card card-shadow mb-4">
                             <div class="card-header">
                                 <div class="card-title">
-                                    Bootstrap Touchspin
+                                    Basic Area
                                 </div>
                             </div>
                             <div class="card-body">
-                                <form class="picker-form">
-                                    <div class="form-group row">
-                                        <label class="col-sm-4 col-form-label col-form-label-sm">Default</label>
-                                        <div class="col-sm-4">
-                                            <input id="demo" type="text" value="1" name="demo">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label class="col-sm-4 col-form-label col-form-label-sm">With Postfix</label>
-                                        <div class="col-sm-4">
-                                            <input id="demo1" type="text" value="55" name="demo1">
-                                        </div>
-                                    </div>
-
-
-                                    <div class="form-group row">
-                                        <label class="col-sm-4 col-form-label col-form-label-sm">With Prefix</label>
-                                        <div class="col-sm-4">
-                                            <input id="demo2" type="text" value="0" name="demo2" class=" form-control">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label class="col-sm-4 col-form-label col-form-label-sm">Vertical Custom Icon</label>
-                                        <div class="col-sm-4">
-                                            <input id="demo_vertical" class="form-control bootstrap-touchspin-vertical-btn" type="text" value="1" name="demo_vertical">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label class="col-sm-4 col-form-label col-form-label-sm">Vertical Custom Icon </label>
-                                        <div class="col-sm-4">
-                                            <input id="demo_vertical2" class="form-control bootstrap-touchspin-vertical-btn" type="text" value="1" name="demo_vertical2">
-                                        </div>
-                                    </div>
-
-                                </form>
+                                <div id="b-area" style="height: 350px"></div>
                             </div>
                         </div>
                     </div>
 
+                    <div class=" col-sm-6">
+                        <div class="card card-shadow mb-4">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    Basic Line
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="b-line" style="height: 350px"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-sm-6">
+                        <div class="card card-shadow mb-4">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    Basic Scatter Chart
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="bs-chart" style="height: 350px"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-sm-6">
+                        <div class="card card-shadow mb-4">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    Negative Bar Chart
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="nb-chart" style="height: 350px"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-sm-6">
+                        <div class="card card-shadow mb-4">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    Rainfall and Evaporation
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="rainfall" style="height: 350px"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class=" col-sm-6">
+                        <div class="card card-shadow mb-4">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    Basic Pie Chart
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="basic-Pie" style="height: 350px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-6">
+                        <div class="card card-shadow mb-4">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    Nested Pie Chart
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="np-Pie" style="height: 350px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-6">
+                        <div class="card card-shadow mb-4">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    Doughnut Pie Chart
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="doughnut" style="height: 350px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-6">
+                        <div class="card card-shadow mb-4">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    Gauge
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="gauge" style="height: 350px"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-6">
+                        <div class="card card-shadow mb-4">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    Basic Radar Chart
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="radar" style="height: 350px"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
+
                 <!-- state end-->
 
             </div>
@@ -762,9 +836,12 @@ testing git
     <script class="include" type="text/javascript" src="assets/vendor/jquery.dcjqaccordion.2.7.js"></script>
     <script src="assets/vendor/jquery.scrollTo.min.js"></script>
 
-    <!--touchspin-->
-    <script src="assets/vendor/touchspin/jquery.bootstrap-touchspin.min.js"></script>
-    <script src="assets/vendor/touchspin-init.js"></script>
+
+    <!--echarts-->
+    <script type="text/javascript" src="assets/vendor/echarts/echarts-all-3.js"></script>
+
+    <!--init echarts-->
+    <script type="text/javascript" src="assets/vendor/echarts/init-echarts.js"></script>
 
 
     <!--[if lt IE 9]>
